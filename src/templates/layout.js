@@ -71,13 +71,13 @@ function header(depth, currentPath) {
       <ul>${links}</ul>
     </nav>
     <div class="header-actions">
-      ${languageSwitcher()}
       <a class="icon-link" href="${rel(depth, '/rechercher/')}" aria-label="Rechercher" data-i18n-aria-label="Rechercher">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
       </a>
       <a class="icon-link" href="${rel(depth, '/espace-membre/')}" data-auth-link aria-label="Espace membre" data-i18n-aria-label="Espace membre">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.6-3.4 4.4-5 8-5s6.4 1.6 8 5"/></svg>
       </a>
+      ${languageSwitcher()}
       <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile">
         <span class="menu-toggle-label" data-i18n="Menu">Menu</span>
         <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span></span>
