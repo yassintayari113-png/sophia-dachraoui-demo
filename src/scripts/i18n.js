@@ -4,7 +4,8 @@
   var KEY = 'sophia_ui_lang';
   var fallback = 'fr-CH';
   var dict = {
-    'en': {
+
+  'en': {
       'Aller au contenu': 'Skip to content',
       'Site de démonstration — contenus fictifs, paiement et comptes simulés. Aucune donnée réelle.': 'Demo website — fictional content, simulated payments and accounts. No real data.',
       'Écriture & recherche': 'Writing & research',
@@ -139,6 +140,26 @@
 'Appel ouvert · limite :': 'Open call · deadline:',
 'Votre adresse e-mail': 'Your email address',
 'Contact': 'Contact'
+      'Ce site rassemble un travail mené entre écriture et recherche : des essais, des publications, des cours et des projets éditoriaux collectifs. Chaque texte de cette démonstration est un contenu fictif, destiné à être remplacé par les contenus réels de l’auteure.': 'This site gathers work between writing and research: essays, publications, courses and collective editorial projects. Every text here is fictional and meant to be replaced by the author’s real work.',
+'Revue fictive de démonstration — Cahiers de littérature comparée (à confirmer)': 'Fictional demo journal — Cahiers de littérature comparée (to be confirmed)',
+'Revue fictive de démonstration — Études de lettres (à confirmer)': 'Fictional demo journal — Études de lettres (to be confirmed)',
+'Actes de colloque fictifs — Rencontres de la traduction littéraire (à confirmer)': 'Fictional proceedings — Rencontres de la traduction littéraire (to be confirmed)',
+'◈ Références fictives — aucune publication réelle n’est mentionnée.': '◈ Fictional references — no real publication is mentioned.',
+'Hybride (en ligne + une rencontre) · Intermédiaire': 'Hybrid (online + one meeting) · Intermediate',
+'Présentiel (Genève — lieu à confirmer) · Avancé': 'In person (Geneva — venue to be confirmed) · Advanced',
+'Une lettre sobre : les nouveaux textes, les appels en cours, rien d’autre.': 'A plain letter: new texts, current calls, nothing else.',
+'mémoire': 'memory',
+'récit': 'narrative',
+'archive': 'archive',
+'témoignage': 'testimony',
+'lecture': 'reading',
+'réception': 'reception',
+'annotation': 'annotation',
+'citation': 'citation',
+'plurilinguisme': 'multilingualism',
+'traduction': 'translation',
+'exil': 'exile',
+'hospitalité': 'hospitality'
     },
     'de-CH': {
       'Aller au contenu': 'Zum Inhalt',
@@ -275,9 +296,28 @@
 'Appel ouvert · limite :': 'Offener Aufruf · Frist:',
 'Votre adresse e-mail': 'Ihre E-Mail-Adresse',
 'Contact': 'Kontakt'
+  'Ce site rassemble un travail mené entre écriture et recherche : des essais, des publications, des cours et des projets éditoriaux collectifs. Chaque texte de cette démonstration est un contenu fictif, destiné à être remplacé par les contenus réels de l’auteure.': 'Diese Website versammelt Arbeit zwischen Schreiben und Forschung: Essays, Publikationen, Kurse und gemeinsame Editionsprojekte. Jeder Text dieser Demonstration ist fiktiv und soll durch die echten Inhalte der Autorin ersetzt werden.',
+'Revue fictive de démonstration — Cahiers de littérature comparée (à confirmer)': 'Fiktive Demo-Zeitschrift — Cahiers de littérature comparée (zu bestätigen)',
+'Revue fictive de démonstration — Études de lettres (à confirmer)': 'Fiktive Demo-Zeitschrift — Études de lettres (zu bestätigen)',
+'Actes de colloque fictifs — Rencontres de la traduction littéraire (à confirmer)': 'Fiktive Tagungsakten — Rencontres de la traduction littéraire (zu bestätigen)',
+'◈ Références fictives — aucune publication réelle n’est mentionnée.': '◈ Fiktive Nachweise — keine echte Publikation wird genannt.',
+'Hybride (en ligne + une rencontre) · Intermédiaire': 'Hybrid (online + ein Treffen) · Mittelstufe',
+'Présentiel (Genève — lieu à confirmer) · Avancé': 'Vor Ort (Genf — Ort zu bestätigen) · Fortgeschritten',
+'Une lettre sobre : les nouveaux textes, les appels en cours, rien d’autre.': 'Ein schlichter Brief: neue Texte, laufende Aufrufe, sonst nichts.',
+'mémoire': 'Erinnerung',
+'récit': 'Erzählung',
+'archive': 'Archiv',
+'témoignage': 'Zeugnis',
+'lecture': 'Lektüre',
+'réception': 'Rezeption',
+'annotation': 'Anmerkung',
+'citation': 'Zitat',
+'plurilinguisme': 'Mehrsprachigkeit',
+'traduction': 'Übersetzung',
+'exil': 'Exil',
+'hospitalité': 'Gastfreundschaft'
     }
   };
-
   function read() {
     try {
       var v = localStorage.getItem(KEY);
