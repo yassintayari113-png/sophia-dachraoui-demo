@@ -1,0 +1,154 @@
+[
+  {
+    "type": "article",
+    "title": "Lire à l’ère des écrans",
+    "text": "Ce que l’attention fragmentée fait à la lecture — et ce que la lecture peut encore pour elle. La lecture n’a jamais été un geste simple. Mais quelque chose a changé lorsque l’écran est devenu notre première page : une réflexion sur l’attention, la lenteur et la persistance du texte.",
+    "url": "/articles/lire-a-l-ere-des-ecrans/",
+    "meta": "Accès libre",
+    "isDemo": true
+  },
+  {
+    "type": "article",
+    "title": "La bibliothèque comme paysage",
+    "text": "Ce que nos étagères racontent de nous — et ce qu’elles taisent. Une bibliothèque n’est pas un meuble : c’est une autobiographie involontaire, un paysage intérieur que chaque livre déplace un peu.",
+    "url": "/articles/la-bibliotheque-comme-paysage/",
+    "meta": "Accès libre",
+    "isDemo": true
+  },
+  {
+    "type": "article",
+    "title": "Écrire entre les langues",
+    "text": "La traduction de soi comme expérience littéraire. Que devient une phrase lorsque son auteur la fait passer dans une autre langue ? Enquête sur l’autotraduction, l’exil intérieur et l’hospitalité des langues.",
+    "url": "/articles/ecrire-entre-les-langues/",
+    "meta": "Premium",
+    "isDemo": true
+  },
+  {
+    "type": "article",
+    "title": "Le carnet avant le livre",
+    "text": "Petite apologie des écritures préparatoires. Brouillons, listes, fragments : les carnets sont la coulisse où l’écriture apprend à marcher avant de paraître.",
+    "url": "/articles/le-carnet-avant-le-livre/",
+    "meta": "Accès libre",
+    "isDemo": true
+  },
+  {
+    "type": "article",
+    "title": "La marge et le texte",
+    "text": "Annoter, c’est habiter le livre. Des gloses médiévales aux crayonnés d’étudiants : l’annotation comme forme mineure de l’écriture — et comme manière de lire à deux voix.",
+    "url": "/articles/la-marge-et-le-texte/",
+    "meta": "Premium",
+    "isDemo": true
+  },
+  {
+    "type": "article",
+    "title": "Transmettre sans apprivoiser",
+    "text": "Sur l’enseignement de la littérature. Enseigner un texte, ce n’est pas le domestiquer : c’est préparer la rencontre entre le texte et ceux qui le liront sans nous.",
+    "url": "/articles/transmettre-sans-apprivoiser/",
+    "meta": "Accès libre",
+    "isDemo": true
+  },
+  {
+    "type": "publication",
+    "title": "La lecture comme hospitalité",
+    "text": "Résumé de démonstration — une étude du geste de lecture comme accueil : ouvrir un texte, c’est lui faire une place, avec ce que tout accueil suppose de règles et de risques.",
+    "url": "/publications/",
+    "meta": "Article de revue · 2026",
+    "isDemo": true
+  },
+  {
+    "type": "publication",
+    "title": "Marges vivantes : pour une histoire de l’annotation",
+    "text": "Résumé de démonstration — jalons pour une histoire culturelle de l’annotation, de la glose médiévale aux carnets numériques.",
+    "url": "/publications/",
+    "meta": "Article de revue · 2025",
+    "isDemo": true
+  },
+  {
+    "type": "publication",
+    "title": "Traduire sa propre voix",
+    "text": "Résumé de démonstration — l’autotraduction comme atelier d’écriture : ce que la seconde langue révèle de la première.",
+    "url": "/publications/",
+    "meta": "Communication · 2025",
+    "isDemo": true
+  },
+  {
+    "type": "publication",
+    "title": "La classe comme atelier de lecture",
+    "text": "Résumé de démonstration — dispositifs de lecture en classe : lecture à voix haute, comparaison de traductions, écriture en marge.",
+    "url": "/publications/",
+    "meta": "Article de revue · 2024",
+    "isDemo": true
+  },
+  {
+    "type": "publication",
+    "title": "Bibliothèques intimes",
+    "text": "Résumé de démonstration — les bibliothèques personnelles comme autobiographies involontaires.",
+    "url": "/publications/",
+    "meta": "Chapitre d’ouvrage · 2023",
+    "isDemo": true
+  },
+  {
+    "type": "livre",
+    "title": "La Langue habitée",
+    "text": "Essai sur la lecture comme demeure Ouvrage de démonstration. Le projet : suivre la lecture comme on suit une maison — ses pièces, ses seuils, ses lieux de passage — et demander ce que signifie « habiter » un texte.",
+    "url": "/livres/la-langue-habitee/",
+    "meta": "Essai — ouvrage principal · 2026",
+    "isDemo": true
+  },
+  {
+    "type": "livre",
+    "title": "Carnets du seuil",
+    "text": "Fragments sur l’écriture qui commence Ouvrage de démonstration. Une suite de fragments sur le moment où l’écriture commence : la première phrase, la page blanche, les faux départs.",
+    "url": "/livres/carnets-du-seuil/",
+    "meta": "Récit — carnets · 2024",
+    "isDemo": true
+  },
+  {
+    "type": "cours",
+    "title": "Atelier d’écriture : le carnet et la voix",
+    "text": "Un cycle d’ateliers pour apprendre à tenir un carnet, trouver sa voix et passer du fragment au texte.",
+    "url": "/cours/atelier-ecriture-de-soi/",
+    "meta": "En ligne, en direct · Tous niveaux",
+    "isDemo": true
+  },
+  {
+    "type": "cours",
+    "title": "Lire les classiques autrement",
+    "text": "Un parcours de lecture pour revenir aux grands textes sans la distance scolaire — et les lire comme des contemporains.",
+    "url": "/cours/lire-les-classiques/",
+    "meta": "Hybride (en ligne + une rencontre) · Intermédiaire",
+    "isDemo": true
+  },
+  {
+    "type": "cours",
+    "title": "Séminaire : mémoire et récit",
+    "text": "Un séminaire de recherche ouvert sur les formes narratives de la mémoire — lecture, discussion, écriture.",
+    "url": "/cours/seminaire-memoire-recit/",
+    "meta": "Présentiel (Genève — lieu à confirmer) · Avancé",
+    "isDemo": true
+  },
+  {
+    "type": "recherche",
+    "title": "Littérature et mémoire",
+    "text": "Comment la fiction accueille-t-elle ce que l’histoire ne peut pas dire ? Axe de démonstration — une réflexion sur les formes narratives de la mémoire : témoins, archives, silences, et la part que la littérature prend à leur transmission.",
+    "url": "/recherche/",
+    "meta": "Axe de recherche",
+    "isDemo": true
+  },
+  {
+    "type": "recherche",
+    "title": "Poétique de la lecture",
+    "text": "Que fait lire au texte — et que fait le texte à celui qui lit ? Axe de démonstration — une étude des gestes de lecture : annotation, citation, relecture, et la manière dont les lecteurs deviennent à leur tour des auteurs.",
+    "url": "/recherche/",
+    "meta": "Axe de recherche",
+    "isDemo": true
+  },
+  {
+    "type": "recherche",
+    "title": "Écrire entre les langues",
+    "text": "Qu’advient-il d’une phrase lorsqu’elle passe d’une langue à l’autre ? Axe de démonstration — une exploration de l’écriture plurilingue : traduction de soi, exil linguistique, hospitalité des langues.",
+    "url": "/recherche/",
+    "meta": "Axe de recherche",
+    "isDemo": true
+  }
+]

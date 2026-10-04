@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480" role="img" aria-label="Couverture de démonstration — La Langue habitée">
+  <rect width="320" height="480" fill="#6d1f2d"/>
+  <rect x="18" y="18" width="284" height="444" fill="none" stroke="#f7f2ea" stroke-width="1"/>
+  <text x="160" y="120" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#f7f2ea" text-anchor="middle">La Langue</text>
+  <text x="160" y="165" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#f7f2ea" text-anchor="middle">habitée</text>
+  <line x1="110" y1="200" x2="210" y2="200" stroke="#a5854a" stroke-width="1"/>
+  <text x="160" y="235" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="15" fill="#e8d9c8" text-anchor="middle">Essai sur la lecture</text>
+  <text x="160" y="255" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="15" fill="#e8d9c8" text-anchor="middle">comme demeure</text>
+  <text x="160" y="420" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#f7f2ea" text-anchor="middle">Sophia Dachraoui</text>
+  <text x="160" y="452" font-family="Arial, sans-serif" font-size="9" letter-spacing="2" fill="#c9a98f" text-anchor="middle">COUVERTURE DE DÉMONSTRATION</text>
+</svg>

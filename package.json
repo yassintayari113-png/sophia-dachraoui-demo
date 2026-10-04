@@ -1,0 +1,30 @@
+{
+  "name": "sophia-demo-v2",
+  "version": "2.1.0",
+  "private": true,
+  "description": "SOPHIA — site éditorial multilingue, démo client, générateur statique + API Render/Neon.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "build": "node build/build.js",
+    "start": "node server/server.mjs",
+    "serve": "node build/serve.js",
+    "dev": "node build/build.js && node server/server.mjs",
+    "test": "node tests/smoke.test.js",
+    "check": "node tests/smoke.test.js"
+  },
+  "keywords": [
+    "demo",
+    "static-site",
+    "editorial",
+    "literary"
+  ],
+  "author": "Studio — démo pour Sophia Dachraoui",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {}
+}

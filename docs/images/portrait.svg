@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" role="img" aria-label="Portrait de démonstration">
+  <defs>
+    <pattern id="lines" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 6 6 0" stroke="#ddd2bf" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="750" fill="#f1ebe0"/>
+  <rect width="600" height="750" fill="url(#lines)"/>
+  <rect x="30" y="30" width="540" height="690" fill="none" stroke="#6d1f2d" stroke-width="2"/>
+  <circle cx="300" cy="300" r="110" fill="none" stroke="#211d17" stroke-width="1.5"/>
+  <text x="300" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="110" fill="#211d17" text-anchor="middle">S</text>
+  <text x="300" y="560" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#211d17" text-anchor="middle">Sophia Dachraoui</text>
+  <text x="300" y="605" font-family="Arial, sans-serif" font-size="15" letter-spacing="4" fill="#6d1f2d" text-anchor="middle">PORTRAIT — DÉMONSTRATION</text>
+  <text x="300" y="640" font-family="Arial, sans-serif" font-size="12" fill="#8a8172" text-anchor="middle">Visuel à remplacer par la photographie de la cliente</text>
+</svg>
