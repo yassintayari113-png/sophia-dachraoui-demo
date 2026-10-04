@@ -12,15 +12,222 @@
   function home(){var r=safeRedirect(new URLSearchParams(location.search).get('redirect'));location.href=r||'../espace-membre/';}
   var current=readLocal();
   // Server session sync (Render). Failure is expected on GitHub Pages.
-  if(window.SophiaAPI){window.SophiaAPI.get('/api/auth/me').then(function(data){if(data&&data.session)AuthSession.write(data.session);});}
+if(window.SophiaAPI){
+  window.SophiaAPI.get('/api/auth/me')
+    .then(function(data){
+      if(data && data.session){
+        AuthSession.write(data.session);
+      }
+    })
+    .catch(function(){
+      // GitHub Pages has no backend yet — continue in demo mode.
+    });
+}
 
-  var login=document.querySelector('[data-login-form]');
-  if(login){ if(current){home();return;} login.addEventListener('submit',async function(e){e.preventDefault();var email=login.email.value.trim(),password=login.password.value;if(!validEmail(email)){status(login,'Veuillez saisir une adresse e-mail valide.',false);return;}var btn=login.querySelector('button[type=submit]');btn.disabled=true;try{var data;if(window.SophiaAPI){data=await window.SophiaAPI.post('/api/auth/login',{email:email,password:password});}else{var a=AuthSession.loginLocal(email,password);if(!a)throw new Error('Identifiants inconnus');data={session:{demo:true,email:a.email,name:a.name,role:a.role,since:new Date().toISOString()}};}AuthSession.write(data.session);status(login,'Connexion réussie…',true);setTimeout(home,350);}catch(err){status(login,err.message&&/Identifiants|incorrect/i.test(err.message)?err.message:'Identifiants inconnus. Utilisez un compte de démonstration.',false);btn.disabled=false;}});}
+var login=document.querySelector('[data-login-form]');
+if(login){
+  if(current){
+    home();
+    return;
+  }
 
-  var register=document.querySelector('[data-register-form]');
-  if(register){if(current){home();return;}register.addEventListener('submit',async function(e){e.preventDefault();var email=register.email.value.trim();if(!register.nom.value.trim()){status(register,'Veuillez indiquer votre nom.',false);return;}if(!validEmail(email)){status(register,'Veuillez saisir une adresse e-mail valide.',false);return;}if(register.password.value.length<10){status(register,'Le mot de passe doit contenir au moins 10 caractères.',false);return;}if(!register.consent.checked){status(register,'Merci de confirmer votre consentement.',false);return;}var btn=register.querySelector('button[type=submit]');btn.disabled=true;try{var data;if(window.SophiaAPI){data=await window.SophiaAPI.post('/api/auth/register',{name:register.nom.value.trim(),email:email,password:register.password.value});}else{data={session:{demo:true,email:email,name:register.nom.value.trim(),role:'member',since:new Date().toISOString()}};}AuthSession.write(data.session);status(register,'Compte créé…',true);setTimeout(home,350);}catch(err){status(register,err.message||'Impossible de créer le compte.',false);btn.disabled=false;}});}
+  login.addEventListener('submit',async function(e){
+    e.preventDefault();
 
-  var forgot=document.querySelector('[data-forgot-form]');
-  if(forgot){forgot.addEventListener('submit',function(e){e.preventDefault();if(!validEmail(forgot.email.value.trim())){status(forgot,'Veuillez saisir une adresse e-mail valide.',false);return;}status(forgot,'Si un compte correspond à cette adresse, un lien de réinitialisation serait envoyé (démonstration).',true);forgot.reset();});}
-  var link=document.querySelector('[data-auth-link]');if(link&&current)link.setAttribute('aria-label','Espace membre — connecté ('+current.email+')');
+    var email=login.email.value.trim();
+    var password=login.password.value;
+
+    if(!validEmail(email)){
+      status(login,'Veuillez saisir une adresse e-mail valide.',false);
+      return;
+    }
+
+    var btn=login.querySelector('button[type=submit]');
+    btn.disabled=true;
+
+    try{
+      var data=null;
+
+      // Try the real Render backend first.
+      if(window.SophiaAPI){
+        try{
+          data=await window.SophiaAPI.post('/api/auth/login',{
+            email:email,
+            password:password
+          });
+        }catch(apiErr){
+          // Backend unavailable (for example on GitHub Pages).
+          // Fall back to the local demo accounts.
+          var localAccount=AuthSession.loginLocal(email,password);
+
+          if(!localAccount){
+            throw apiErr;
+          }
+
+          data={
+            session:{
+              demo:true,
+              email:localAccount.email,
+              name:localAccount.name,
+              role:localAccount.role,
+              since:new Date().toISOString()
+            }
+          };
+        }
+      }else{
+        // No backend available — use local demo accounts.
+        var a=AuthSession.loginLocal(email,password);
+
+        if(!a){
+          throw new Error('Identifiants inconnus');
+        }
+
+        data={
+          session:{
+            demo:true,
+            email:a.email,
+            name:a.name,
+            role:a.role,
+            since:new Date().toISOString()
+          }
+        };
+      }
+
+      AuthSession.write(data.session);
+      status(login,'Connexion réussie…',true);
+      setTimeout(home,350);
+
+    }catch(err){
+      status(
+        login,
+        err.message&&/Identifiants|incorrect/i.test(err.message)
+          ?err.message
+          :'Identifiants inconnus. Utilisez un compte de démonstration.',
+        false
+      );
+
+      btn.disabled=false;
+    }
+  });
+}
+
+var register=document.querySelector('[data-register-form]');
+if(register){
+  if(current){
+    home();
+    return;
+  }
+
+  register.addEventListener('submit',async function(e){
+    e.preventDefault();
+
+    var email=register.email.value.trim();
+
+    if(!register.nom.value.trim()){
+      status(register,'Veuillez indiquer votre nom.',false);
+      return;
+    }
+
+    if(!validEmail(email)){
+      status(register,'Veuillez saisir une adresse e-mail valide.',false);
+      return;
+    }
+
+    if(register.password.value.length<10){
+      status(register,'Le mot de passe doit contenir au moins 10 caractères.',false);
+      return;
+    }
+
+    if(!register.consent.checked){
+      status(register,'Merci de confirmer votre consentement.',false);
+      return;
+    }
+
+    var btn=register.querySelector('button[type=submit]');
+    btn.disabled=true;
+
+    try{
+      var data=null;
+
+      // Try the real Render backend first.
+      if(window.SophiaAPI){
+        try{
+          data=await window.SophiaAPI.post('/api/auth/register',{
+            name:register.nom.value.trim(),
+            email:email,
+            password:register.password.value
+          });
+        }catch(apiErr){
+          // Backend unavailable — create a local demo session.
+          data={
+            session:{
+              demo:true,
+              email:email,
+              name:register.nom.value.trim(),
+              role:'member',
+              since:new Date().toISOString()
+            }
+          };
+        }
+      }else{
+        // No backend available — create a local demo session.
+        data={
+          session:{
+            demo:true,
+            email:email,
+            name:register.nom.value.trim(),
+            role:'member',
+            since:new Date().toISOString()
+          }
+        };
+      }
+
+      AuthSession.write(data.session);
+      status(register,'Compte créé…',true);
+      setTimeout(home,350);
+
+    }catch(err){
+      status(
+        register,
+        err.message||'Impossible de créer le compte.',
+        false
+      );
+
+      btn.disabled=false;
+    }
+  });
+}
+
+var forgot=document.querySelector('[data-forgot-form]');
+if(forgot){
+  forgot.addEventListener('submit',function(e){
+    e.preventDefault();
+
+    if(!validEmail(forgot.email.value.trim())){
+      status(
+        forgot,
+        'Veuillez saisir une adresse e-mail valide.',
+        false
+      );
+      return;
+    }
+
+    status(
+      forgot,
+      'Si un compte correspond à cette adresse, un lien de réinitialisation serait envoyé (démonstration).',
+      true
+    );
+
+    forgot.reset();
+  });
+}
+
+var link=document.querySelector('[data-auth-link]');
+
+if(link&&current){
+  link.setAttribute(
+    'aria-label',
+    'Espace membre — connecté ('+current.email+')'
+  );
+}
 })();
