@@ -679,3 +679,29 @@ table.data td code { font-size: 0.78em; overflow-wrap: anywhere; }
     width: 19px;
   }
 }
+/* Prevent narrow/mobile layouts from creating a white side strip */
+html,
+body {
+  width: 100%;
+  min-width: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+
