@@ -565,16 +565,20 @@ table.data td code { font-size: 0.78em; overflow-wrap: anywhere; }
   .header-inner {
     width: 100%;
     min-width: 0;
-    gap: 0.65rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 0.45rem;
+    column-gap: 0.65rem;
   }
 
   .brand {
+    flex: 1 1 100%;
     min-width: 0;
-    flex: 1 1 auto;
+    max-width: 100%;
   }
 
   .brand-name {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     white-space: nowrap;
   }
 
@@ -585,8 +589,12 @@ table.data td code { font-size: 0.78em; overflow-wrap: anywhere; }
   }
 
   .header-actions {
-    flex: 0 0 auto;
-    min-width: 0;
+    width: 100%;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 0.65rem;
   }
 
@@ -607,7 +615,10 @@ table.data td code { font-size: 0.78em; overflow-wrap: anywhere; }
   }
 
   .language-switcher {
-    flex: 0 0 auto;
+    order: 5;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .language-button {
@@ -629,7 +640,7 @@ table.data td code { font-size: 0.78em; overflow-wrap: anywhere; }
   }
 
   .brand-name {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
   }
 
   .brand-sub {
@@ -667,29 +678,4 @@ table.data td code { font-size: 0.78em; overflow-wrap: anywhere; }
   .menu-toggle-lines {
     width: 19px;
   }
-}
-
-/* Prevent narrow/mobile layouts from creating a white side strip */
-html,
-body {
-  width: 100%;
-  min-width: 0;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.wrap {
-  width: 100%;
-  max-width: var(--wrap);
-}
-
-html,
-body {
-  width: 100%;
-  min-width: 0;
-}
-body {
-  overflow-x: hidden;
 }
