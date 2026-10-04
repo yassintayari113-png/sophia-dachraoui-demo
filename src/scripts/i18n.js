@@ -139,7 +139,7 @@
 'En ligne, en direct · Tous niveaux': 'Online, live · All levels',
 'Appel ouvert · limite :': 'Open call · deadline:',
 'Votre adresse e-mail': 'Your email address',
-'Contact': 'Contact'
+'Contact': 'Contact',
       'Ce site rassemble un travail mené entre écriture et recherche : des essais, des publications, des cours et des projets éditoriaux collectifs. Chaque texte de cette démonstration est un contenu fictif, destiné à être remplacé par les contenus réels de l’auteure.': 'This site gathers work between writing and research: essays, publications, courses and collective editorial projects. Every text here is fictional and meant to be replaced by the author’s real work.',
 'Revue fictive de démonstration — Cahiers de littérature comparée (à confirmer)': 'Fictional demo journal — Cahiers de littérature comparée (to be confirmed)',
 'Revue fictive de démonstration — Études de lettres (à confirmer)': 'Fictional demo journal — Études de lettres (to be confirmed)',
@@ -295,7 +295,7 @@
 'En ligne, en direct · Tous niveaux': 'Online, live · Alle Stufen',
 'Appel ouvert · limite :': 'Offener Aufruf · Frist:',
 'Votre adresse e-mail': 'Ihre E-Mail-Adresse',
-'Contact': 'Kontakt'
+'Contact': 'Kontakt' ,
   'Ce site rassemble un travail mené entre écriture et recherche : des essais, des publications, des cours et des projets éditoriaux collectifs. Chaque texte de cette démonstration est un contenu fictif, destiné à être remplacé par les contenus réels de l’auteure.': 'Diese Website versammelt Arbeit zwischen Schreiben und Forschung: Essays, Publikationen, Kurse und gemeinsame Editionsprojekte. Jeder Text dieser Demonstration ist fiktiv und soll durch die echten Inhalte der Autorin ersetzt werden.',
 'Revue fictive de démonstration — Cahiers de littérature comparée (à confirmer)': 'Fiktive Demo-Zeitschrift — Cahiers de littérature comparée (zu bestätigen)',
 'Revue fictive de démonstration — Études de lettres (à confirmer)': 'Fiktive Demo-Zeitschrift — Études de lettres (zu bestätigen)',
