@@ -102,6 +102,13 @@
 'Votre adresse e-mail': 'Your email address',
 'Essai — ouvrage principal · 2026 · En préparation': 'Essay — main book · 2026 · In preparation',
 'Extrait fictif — démonstration': 'Fictional excerpt — demonstration',
+      'Appel ouvert · limite :': 'Open call · deadline:',
+'Essai ·': 'Essay ·',
+'Chronique ·': 'Column ·',
+'Atelier ·': 'Workshop ·',
+'min de lecture': 'min read',
+'En ligne, en direct · Tous niveaux': 'Online, live · All levels',
+'Portrait de Sophia Dachraoui — visuel de démonstration': 'Portrait of Sophia Dachraoui — demo image',
     },
     'de-CH': {
       'Aller au contenu': 'Zum Inhalt',
@@ -201,6 +208,13 @@
 'Votre adresse e-mail': 'Ihre E-Mail-Adresse',
 'Essai — ouvrage principal · 2026 · En préparation': 'Essay — Hauptwerk · 2026 · In Vorbereitung',
 'Extrait fictif — démonstration': 'Fiktiver Auszug — Demonstration',
+      'Appel ouvert · limite :': 'Offener Aufruf · Frist:',
+'Essai ·': 'Essay ·',
+'Chronique ·': 'Kolumne ·',
+'Atelier ·': 'Atelier ·',
+'min de lecture': 'Min. Lesezeit',
+'En ligne, en direct · Tous niveaux': 'Online, live · Alle Stufen',
+'Portrait de Sophia Dachraoui — visuel de démonstration': 'Porträt von Sophia Dachraoui — Demo-Bild',
     }
   };
 
