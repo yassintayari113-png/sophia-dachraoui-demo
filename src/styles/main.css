@@ -511,7 +511,19 @@ table.data td code { font-size: 0.78em; overflow-wrap: anywhere; }
 @media (max-width: 900px) {
   .main-nav { display: none; }
   .menu-toggle { display: inline-flex; }
-  .language-switcher { order: -1; }
+  .header-inner { align-items: flex-start; }
+  .brand { flex: 1; min-width: 0; padding-right: 0.75rem; }
+  .brand-name { white-space: nowrap; }
+  .header-actions {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: end;
+    align-items: center;
+    column-gap: 0.7rem;
+    row-gap: 0.45rem;
+    flex: 0 0 auto;
+  }
+  .language-switcher { grid-column: 1 / -1; justify-self: end; }
   .language-button { min-width: 31px; padding-inline: 0.35rem; }
   .hero-grid { grid-template-columns: 1fr; align-items: start; }
   .hero-aside { border-left: 0; border-top: 1px solid var(--line); padding: var(--space-3) 0 0; }
